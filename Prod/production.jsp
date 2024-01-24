@@ -423,9 +423,9 @@ let month = months[dateObj.getMonth()];
     
       try {
          Class.forName("org.postgresql.Driver");
-         c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/store", "postgres", "raspberry");
          
-         
+          c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/sewa", "tyui_1", "jigger");
+
 	 preparedStatement = c.prepareStatement(query1);
 	  preparedStatement.setString(1, shop_user_name);
          
@@ -718,7 +718,8 @@ let month = months[dateObj.getMonth()];
 	else if(department.equals( "production_view")){
    // Proceed to production3.jsp
    	  // New location to be redirected
-         String site = new String("http://13.53.61.254:8080/fumi/production3.jsp");
+       
+  String site = new String("http://15.46.78.200:8080/fumi/production3.jsp");
          response.setStatus(response.SC_MOVED_TEMPORARILY);
          response.setHeader("Location", site); 
    
@@ -731,7 +732,8 @@ let month = months[dateObj.getMonth()];
 	   out.println("<br> Please try to login again" );
 	  
 	  // New location to be redirected
-         String site = new String("http://13.53.61.254:8080/fumi/");
+        
+ String site = new String("http://15.46.78.200:8080/fumi/");
          response.setStatus(response.SC_MOVED_TEMPORARILY);
          response.setHeader("Location", site); 
 	  
