@@ -400,8 +400,8 @@ if(request.getParameter("spark_ink_target") != null){
     
       try {
          Class.forName("org.postgresql.Driver");
-         c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/store", "postgres", "raspberry");
          
+          c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/sewa", "tyui_1", "jigger");
          
 	  preparedStatement = c.prepareStatement(query1);
 	  preparedStatement.setString(1,device_dates);
