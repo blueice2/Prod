@@ -308,7 +308,8 @@
     try{
 		
 		Class.forName("org.postgresql.Driver");
-         c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/store", "postgres", "raspberry");
+        
+c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/sewa", "tyui_1", "jigger");
     
     // Obtain ink consumption based on ink type, machine and month
  	
